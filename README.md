@@ -1,8 +1,8 @@
 ---
-"TBXT chromatin loopoing analysis in lung cancer"  
-
+###TBXT chromatin loopoing analysis in lung cancer  
 
 ---
+
 
 ## Introduction
 While high levels of TBXT have been detected in metastatic lung cancer, 
