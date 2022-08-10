@@ -158,5 +158,5 @@ foreach  my $tags(@tags)
     }
 
 my $dat = basename($result_path);
-print   "\n\nAnalysis completed, see results in ", GREEN "$data", RESET " output folder you provided \n\n";
+print   "\n\nAnalysis completed, see results in ", GREEN "$dat", RESET " output folder you provided \n\n";
 
