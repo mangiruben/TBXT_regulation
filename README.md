@@ -1,7 +1,7 @@
 ---
 title: "TBXT chromatin loopoing analysis in lung cancer"  
 author: "<h4>Authors: <i>Reuben M.Yaa, Rafal D. Acamel, Juan Tena</i></h4>" 
-
+date: "<h4>README updated: <i>`r format( Sys.Date(), '%b-%d-%Y')`</i></h4>"
 output:
   github_document
 ---
@@ -22,7 +22,7 @@ Reads were processed using 4C pipeline
 *Interaction lanscape callings*  
 Statisticlly interacting fragments were called using interact_calling.R
  
- *Downstream analysis*  
+## Downstream analysis*  
 Difference analysis of the statistically interacting fragments(now called loops) was done
  - Venn diagrams for comparing loops bettween conditions
  - Merged loop for visualisation of the regulation landscape linear genome using spider plot
