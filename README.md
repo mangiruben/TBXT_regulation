@@ -12,10 +12,10 @@ We used circularised chromosome capture combined with sequencing (4C-seq) to det
 4C libraries were prepared in replicates using NlaIII and DpnII restriction enzymes and sequenced read length 150bp PE
 
 *4C data mapping*  
-Reads were processed using 4C pipeline  
+Reads were processed using [4C pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_pipeline.pl)  
 
 *Interaction lanscape callings*  
-Statisticlly interacting fragments were called using interact_calling.R
+Statisticlly interacting fragments were called using [interact_calling.R](https://github.com/mangiruben/TBXT_regulation/blob/main/code/interact_calling.R)
  
 ## Downstream analysis 
 Difference analysis of the statistically interacting fragments(now called loops) was done
