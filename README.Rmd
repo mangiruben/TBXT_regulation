@@ -9,8 +9,8 @@ output:
 ## Background
 While high levels of TBXT have been detected in metastatic lung cancer, 
 We used circularised chromosome capture combined with sequencing (4C-seq) to determine physical  genome wide cis -interactions from TBXT promoter in 
-1)lung cancer cells H460, a TBXT expressing cell line compared to 
-2)H358 and A549, non-TBXT expressors  
+1)lung cancer cells H460, a *TBXT* expressing cell line compared to 
+2)H358 and A549, non-*TBXT* expressors  
 
 
 ## 4C template and library
