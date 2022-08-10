@@ -1,9 +1,7 @@
 ---
-title: "TBXT chromatin loopoing analysis in lung cancer"  
-author: "<h4>Authors: <i>Reuben M.Yaa, Rafal D. Acamel, Juan Tena</i></h4>" 
-date: "<h4>README updated: <i>`r format( Sys.Date(), '%b-%d-%Y')`</i></h4>"
-output:
-  github_document
+"TBXT chromatin loopoing analysis in lung cancer"  
+
+
 ---
 
 ## Introduction
