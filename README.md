@@ -1,4 +1,4 @@
-### TBXT chromatin loopoing analysis in lung cancer  
+# TBXT chromatin loopoing analysis in lung cancer  
 
 
 ## Introduction
@@ -17,7 +17,7 @@ Reads were processed using 4C pipeline
 *Interaction lanscape callings*  
 Statisticlly interacting fragments were called using interact_calling.R
  
-## Downstream analysis*  
+## Downstream analysis 
 Difference analysis of the statistically interacting fragments(now called loops) was done
  - Venn diagrams for comparing loops bettween conditions
  - Merged loop for visualisation of the regulation landscape linear genome using spider plot
