@@ -26,5 +26,6 @@ Difference analysis of the statistically interacting fragments(now called loops)
  - Motif analysis of gained loops
  
  *Epigenome enrichment analysiss*  
- ChIP-seq analysis of H358, A549 and H460 publicly available datasets
+ ChIP-seq analysis of H358, A549 and H460 publicly available datasets using [ChIP_pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/chip_seq_SE.pl)
+ 
 <hr>
