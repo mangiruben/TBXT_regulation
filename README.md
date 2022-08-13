@@ -1,4 +1,4 @@
-# TBXT chromatin loopoing analysis in lung cancer  
+# TBXT chromatin looping analysis in lung cancer  
 
 
 ## Introduction
