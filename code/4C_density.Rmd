@@ -1,0 +1,48 @@
+---
+title: "4C_density"
+author: "Reuben M. Yaa"
+date: "22/08/2022"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+root.dir <- here::here()
+knitr::opts_chunk$set(echo = TRUE, root.dir=root.dir)
+knitr::opts_knit$set(root.dir = root.dir)
+```
+
+### clustered *TBXT* loops
+
+- Shared loops
+- Gained loops in TBXT expressing environment
+- Lost loops from TBXT expressing environment
+```{r}
+library (ggplot2)
+shared <-read.csv ("data/shared_lung_loops.bed", header= F, sep="\t")
+shared <-data.frame("chr"=shared$V1, "start"=shared$V2, "end"=shared$V3)
+shared$status<-"shared"
+lost <-read.csv ("data/H460_lost_loops.bed", header= F,  sep="\t")
+lost <-data.frame("chr"=lost$V1, "start"=lost$V2, "end"=lost$V3)
+lost$status<-"lost"
+gain <-read.csv ("data/H460_gain_sorted.bed", header= F, sep="\t")
+gain <-data.frame("chr"=gain$V1, "start"=gain$V2, "end"=gain$V3)
+gain$status<-"gain"
+# joining the dataframes
+loops<-rbind(shared, lost, gain)
+# making the distance from viewpoint, absolute... for read1 it is 166169213
+viewpoint <- 166169213 # the viewpoint coordinate
+loops$den=abs(loops$start-viewpoint)
+```
+
+### Ploting the smoothen density plots
+
+```{r fig.align="center", echo = FALSE,fig.width = 14}
+ggplot(loops, aes(x=den, fill=status, colour=status,width=7, height=3 )) +
+  geom_density(alpha=0.4, adjust = 1.25, lwd = 0.2) +
+  
+  labs(x="Distance from viewpoint(bp)", y = "Density")+
+  scale_x_continuous(labels = scales::comma)+
+  theme_classic()
+```
+
+<hr>
