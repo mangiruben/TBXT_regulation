@@ -10,16 +10,17 @@ README updated: <i>Aug-22-2022</i>
 ## Introduction
 
 While high levels of TBXT have been detected in metastatic lung cancer,
-We used circularised chromosome capture combined with sequencing
-(4C-seq) to determine and physical genome wide *cis* -interactions
-differences around *TBXT* loci in 1) lung cancer cells (H460), a TBXT
-expressing cell line 2) lung cancer cells (H358 and A549), non-TBXT
-expressors
+we used circularised chromosome capture combined with sequencing
+(4C-seq) to characterise if physical genome wide *cis* -interactions
+differences around *TBXT* loci in (1) lung cancer cells (H460), a TBXT
+expressing cell line and (2) lung cancer cells (H358 and A549), non-TBXT
+expressers have association with TBXT regulation
 
 ## 4C template and library
 
-4C libraries were prepared in replicates using *Nla*III and *Dpn*II
-restriction enzymes and sequenced and sequenced at 150bp PE
+A543, H358 and H460 4C templates and libraries were prepared in
+replicates using *Nla*III and *Dpn*II restriction enzymes and sequenced
+at 150bp PE
 
 ## 4C data analysis
 
@@ -30,7 +31,8 @@ pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_pipeli
 
 Interaction landscape callings
 
-Statistically interacting fragments were called using [interact\_calling
+Statistically interacting fragments were called using peakC embedded in
+[interact\_calling
 pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/interact_calling.R)
 
 ## Downstream analysis
@@ -46,8 +48,10 @@ follows;
     genome using
     [spider\_plots](https://github.com/mangiruben/TBXT_regulation/blob/main/code/spider_plot.R)
 -   Clustering of loops as shared, gained or lost using Bedtools suit
--   Density analysis of clustered loops
--   Motif analysis of gained loops
+-   Density analysis of clustered loops done using [4C\_changing
+    density](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_density.Rmd)
+-   Motif analysis of gained loops using
+    [RSAT](http://rsat.sb-roscoff.fr/)
 
 Epigenome enrichment analysis
 

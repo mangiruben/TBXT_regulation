@@ -5,13 +5,12 @@ date: "<h4>README updated: <i>`r format( Sys.Date(), '%b-%d-%Y')`</i></h4>"
 output: github_document
 ---
 ## Introduction
-While high levels of TBXT have been detected in metastatic lung cancer, We used circularised chromosome capture combined with sequencing (4C-seq) to determine and  physical genome wide *cis* -interactions differences around *TBXT* loci in 
-1) lung cancer cells (H460), a TBXT expressing cell line 
-2) lung cancer cells (H358 and A549), non-TBXT expressors
+While high levels of TBXT have been detected in metastatic lung cancer, we used circularised chromosome capture combined with sequencing (4C-seq) to characterise if physical genome wide *cis* -interactions  differences around *TBXT* loci in (1) lung cancer cells (H460), a TBXT expressing cell line and
+(2) lung cancer cells (H358 and A549), non-TBXT expressers have association with TBXT regulation
 
 
 ## 4C template and library
-4C libraries were prepared in replicates using *Nla*III and *Dpn*II restriction enzymes and sequenced and sequenced at 150bp PE
+A543, H358 and H460 4C templates and libraries were prepared in replicates using *Nla*III and *Dpn*II restriction enzymes and sequenced at 150bp PE
 
 ## 4C data analysis
 Mapping
@@ -20,7 +19,7 @@ Reads were processed using [4C pipeline](https://github.com/mangiruben/TBXT_regu
 
 Interaction landscape callings
 
-Statistically interacting fragments were called using [interact_calling pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/interact_calling.R)
+Statistically interacting fragments were called using peakC embedded in [interact_calling pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/interact_calling.R)
 
 ## Downstream analysis
 Analysis of the statistically interacting fragments
@@ -30,8 +29,8 @@ The fragments now called loops were analysed in different ways as follows;
   - Venn diagrams for comparing loops between *TBXT* expression conditions
   - Merged loop for visualisation of the regulation landscape linear genome using [spider_plots](https://github.com/mangiruben/TBXT_regulation/blob/main/code/spider_plot.R)
   - Clustering of loops as shared, gained or lost using Bedtools suit
-  - Density analysis of clustered loops
-  - Motif analysis of gained loops
+  - Density analysis of clustered loops done using [4C_changing density](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_density.Rmd)
+  - Motif analysis of gained loops using [RSAT](http://rsat.sb-roscoff.fr/) 
     
 Epigenome enrichment analysis
 
