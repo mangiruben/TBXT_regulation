@@ -37,14 +37,28 @@ loops$den=abs(loops$start-viewpoint)
 ### Ploting the smoothen density plots
 
 ```{r fig.align="center", echo = FALSE,fig.width = 14}
-ggplot(loops, aes(x=den, fill=status, colour=status,width=7, height=3 )) +
+den<-ggplot(loops, aes(x=den, fill=status, colour=status )) +
   geom_density(alpha=0.4, adjust = 1.25, lwd = 0.2) +
   
   labs(x="Distance from viewpoint(bp)", y = "Density")+
   scale_x_continuous(labels = scales::comma)+
   theme_classic()
+
+print(den)
+
 ```
 
-[4C_density results](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_density.html)
+
+#### Save plot 
+
+```{r}
+ggplot2::ggsave(filename = "figures/changing_density.png",
+                plot = den,
+                height = 5, 
+                width = 14, 
+                dpi = 300)
+```
+
+[4C_density results](https://github.com/mangiruben/TBXT_regulation/blob/main/figures/changing_density.png)
 
 <hr>
