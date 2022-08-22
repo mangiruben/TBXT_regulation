@@ -40,11 +40,14 @@ Analysis of the statistically interacting fragments
 The fragments now called loops were analysed in different ways as
 follows;
 
-    - Venn diagrams for comparing loops between *TBXT* expression conditions
-    - Merged loop for visualisation of the regulation landscape linear genome using [spider_plots](https://github.com/mangiruben/TBXT_regulation/blob/main/code/spider_plot.R)
-    - Clustering of loops as shared, gained or lost using Bedtools suit
-    - Density analysis of clustered loops
-    - Motif analysis of gained loops
+-   Venn diagrams for comparing loops between *TBXT* expression
+    conditions
+-   Merged loop for visualisation of the regulation landscape linear
+    genome using
+    [spider\_plots](https://github.com/mangiruben/TBXT_regulation/blob/main/code/spider_plot.R)
+-   Clustering of loops as shared, gained or lost using Bedtools suit
+-   Density analysis of clustered loops
+-   Motif analysis of gained loops
 
 Epigenome enrichment analysis
 
