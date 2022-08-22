@@ -30,7 +30,7 @@ gain$status<-"gain"
 # joining the dataframes
 loops<-rbind(shared, lost, gain)
 # making the distance from viewpoint, absolute... for read1 it is 166169213
-viewpoint <- 166169213 # the viewpoint coordinate
+viewpoint <- 166169213 # the viewpoint coordinate hg38
 loops$den=abs(loops$start-viewpoint)
 ```
 
