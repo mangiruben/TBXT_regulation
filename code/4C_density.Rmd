@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE, root.dir=root.dir)
 knitr::opts_knit$set(root.dir = root.dir)
 ```
 
-### clustered *TBXT* loops
+### Clustered *TBXT* loops
 
 - Shared loops
 - Gained loops in TBXT expressing environment
@@ -44,5 +44,7 @@ ggplot(loops, aes(x=den, fill=status, colour=status,width=7, height=3 )) +
   scale_x_continuous(labels = scales::comma)+
   theme_classic()
 ```
+
+[4C_density results](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_density.html)
 
 <hr>
