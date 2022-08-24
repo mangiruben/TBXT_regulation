@@ -51,8 +51,8 @@ print(den)
 ```{r}
 ggplot2::ggsave(filename = "figures/changing_density.png",
                 plot = den,
-                height = 3, 
-                width = 7, 
+                height = 5, 
+                width = 12, 
                 dpi = 300)
 ```
 
