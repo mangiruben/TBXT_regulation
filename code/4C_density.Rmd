@@ -39,13 +39,10 @@ loops$den=abs(loops$start-viewpoint)
 ```{r fig.align="center", echo = FALSE,fig.width = 14}
 den<-ggplot(loops, aes(x=den, fill=status, colour=status )) +
   geom_density(alpha=0.4, adjust = 1.25, lwd = 0.2) +
-  
   labs(x="Distance from viewpoint(bp)", y = "Density")+
   scale_x_continuous(labels = scales::comma)+
-  theme_classic()
-
+theme_classic(base_size = 30)
 print(den)
-
 ```
 
 
