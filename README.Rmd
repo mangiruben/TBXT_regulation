@@ -34,6 +34,7 @@ The fragments now called loops were analysed in different ways as follows;
     
 Epigenome enrichment analysis
 
-ChIP-seq analysis of H358, A549 and H460 publicly available datasets using [ChIP_pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/chip_seq_SE.pl)
+ChIP-seq analysis of H358, A549 and H460 publicly available datasets using [ChIP_pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/chip_seq_SE.pl). 
+Track collections are saved in UCSC [lung_TBXT](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr6%3A166149847%2D166189172&hgsid=290115163_VLmnkvTVt1edA6syLcggfafmtdXD)
 
 <hr>

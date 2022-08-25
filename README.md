@@ -4,7 +4,7 @@
 Authors: <i>Reuben M. Yaa</i>
 </h4>
 <h4>
-README updated: <i>Aug-22-2022</i>
+README updated: <i>Aug-25-2022</i>
 </h4>
 
 ## Introduction
@@ -29,7 +29,7 @@ Mapping
 Reads were processed using [4C
 pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_pipeline.pl)
 
-Interaction landscape callings
+Interaction landscape calling
 
 Statistically interacting fragments were called using peakC embedded in
 [interact\_calling
@@ -57,6 +57,8 @@ Epigenome enrichment analysis
 
 ChIP-seq analysis of H358, A549 and H460 publicly available datasets
 using
-[ChIP\_pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/chip_seq_SE.pl)
+[ChIP\_pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/chip_seq_SE.pl).
+Track collections are saved in UCSC
+[lung\_TBXT](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr6%3A166149847%2D166189172&hgsid=290115163_VLmnkvTVt1edA6syLcggfafmtdXD)
 
 <hr>
