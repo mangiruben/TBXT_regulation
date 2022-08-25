@@ -17,7 +17,7 @@ Mapping
 
 Reads were processed using [4C pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/4C_pipeline.pl)
 
-Interaction landscape callings
+Interaction landscape calling
 
 Statistically interacting fragments were called using peakC embedded in [interact_calling pipeline](https://github.com/mangiruben/TBXT_regulation/blob/main/code/interact_calling.R)
 
